@@ -209,8 +209,8 @@
                             <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="apple"><img src="assets/welcome/images/apple.png" style="width:100%;height:90%" alt=""></a></div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#"><img src="assets/welcome/images/play.png" style="width:100%" alt=""></a></div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">FOLLOW GAMETWIST</div>
-                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="fb"><i class="fab fa-facebook-square"></i> facebook</a></div>
-                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="tw"><i class="fab fa-twitter"></i> twitter</a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="fb"><i class="fa fa-facebook-square"></i> facebook</a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="tw"><i class="fa fa-twitter"></i> twitter</a></div>
                         </div>
                     </div>
                 </div>
