@@ -1,0 +1,383 @@
+/*===============
+    General css
+==================*/
+a,
+a:hover {
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+hr {
+    border-top: 1px solid rgb(255, 255, 255, .2);
+    margin: 0;
+}
+
+/*===============
+    Header css
+==================*/
+.header {
+    background-image: url(../images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #454040
+}
+.logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.login-reg ul li a:hover {
+    color: #fff;
+}
+.login-reg {
+    padding-top: 15px;
+    text-align: right;
+}
+.login,
+.register {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 46px;
+    border-radius: 30px;
+}
+.login {
+    background: linear-gradient(180deg, #008ddb, #01326b);
+}
+.register {
+    background: linear-gradient(180deg, #4ee5a2, #0c8f5e, #0ea66d);
+    margin-left: 15px;
+}
+/* Menu */
+.menu-area {
+    padding: 8px 0;
+    position: relative;
+    background: #3e36b0;
+    border: 1px solid #fff;
+}
+.menu-area::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 6px 10px 7px rgba(0,0,0,0.94);
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+nav ul li a img{
+    width: 20px;
+    height: 20px;
+}
+.search {
+    position: relative;
+    text-align: right;
+}
+.search span {
+    position: absolute;
+    left: 143px;
+    top: 6px;
+    z-index: 9999;
+    color: #51d3eb;
+}
+.search input {
+    position: relative;
+    background: transparent;
+    color: #fff;
+    border: transparent;
+    padding: 6px 6px 6px 30px;
+    box-shadow: inset 0 0 4px #000000;
+}
+.language li a {
+    padding: 13px 10px 17px;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: -8px;
+}
+
+.language li a img {
+    width: 30%;
+    margin-right: 5px;
+}
+
+.language {
+    margin-bottom: 20px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+input::placeholder{
+  color: #fff;
+}
+.free-text {
+    padding: 15px 0;
+}
+.free-text p {
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    padding-left: 16px;
+}
+.free-text img {
+    padding-bottom: 16px;
+}
+.top-text a {
+    font-size: 15px;
+    color: #51d3eb;
+}
+/*===============
+    Img top css
+==================*/
+.img-top-area {
+    background: #0c092a;
+    padding: 30px 10px;
+}
+.top-text span {
+    color: #fff;
+    border: 1px solid #FF0000;
+    padding: 3px;
+    border-radius: 8px;
+    font-size: 10px;
+}
+.top-text span img {
+    width: 23px;
+    height: 20px;
+}
+.top-text {
+    margin-top: 10px;
+}
+/*===============
+   Gallery css
+==================*/
+.gallery-menu-left {
+    position: relative;
+}
+.gallery-menu-left::before {
+    position: absolute;
+    content: "";
+    background: #454040;
+    width: 121%;
+    height: 1px;
+    bottom: -20px;
+    left: 0;
+}
+.gallery-menu-right ul li a {
+    border: 1px solid #8b8989;
+    padding: 5px 10px;
+    margin: -3px;
+    color: #51d3eb;
+    font-weight: 500;
+}
+.gallery-menu-right ul li .active {
+    color: #fff;
+}
+.gallery-menu-left ul li a {
+    color: #51d3eb;
+    font-weight: 500;
+}
+
+.gallery-menu-left ul li {
+    margin: 0 20px;
+}
+.gallery-menu-left ul li a.active {
+    position: relative;
+}
+
+.gallery-menu-left ul li a.active::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 245%;
+    height: 4px;
+    bottom: -21px;
+    left: -19px;
+}
+.gallery-area {
+    background-color: #0c092a;
+}
+.gallery-single-img {
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+.gallery-single-img a {
+    color: #51d3eb;
+    font-size: 14px;
+    padding-top: 5px;
+    display: block;
+}
+.hover-efect a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px 17px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #4ee5a2, #0c8f5e, #0ea66d);
+    border-radius: 20px;
+    display: inline-block;
+}
+.hover-efect a:hover {
+    background: linear-gradient(#4ee5a2, #0ea66d);
+    background-color: #0c8f5e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #0c8f5e #0ea66d #4ee5a2;
+}
+.hover-efect {
+    display: none;
+    transition: .3s;
+}
+.gallery-single-img:hover .hover-efect{
+   display: block;
+   transition: .3s;
+}
+.gallery-single-img{
+    position: relative;
+}
+.hover-efect{
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    width: 100%;
+    height: 100%;
+}
+/*=================
+    Brand area css
+====================*/
+.brand-area {
+    background-color: #252240;
+    padding: 26px;
+}
+.brand-logo ul li a img {
+    width: 70%;
+    height: 100%;
+}
+/*===================
+    Footer menu Top css
+=======================*/
+.footer-menu-top,
+.footer-area,
+.download-area {
+    background-color: #0D092A;
+    color: #fff;
+}
+.footer-menu-top {
+    padding-top: 20px;
+}
+.footer-menu-top h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.footer-menu-single ul li a {
+    color: #51d3eb;
+    font-size: 18px;
+}
+.email ul li {
+    display: inline-block;
+}
+.email ul li a{
+   padding-left: 10px;
+}
+.copyright-text p {
+    font-size: 18px;
+    text-align: right;
+}
+/*===============
+    Download css
+==================*/
+.download-area {
+    padding: 20px 0;
+    text-align: center;
+}
+.download-btn {
+    padding: 20px 0;
+}
+.heightclass{
+    height:142px;
+}
+.download-btn a {
+    font-size: 10px;
+    color: #51d3eb;
+}
+.download-btn ul li,
+.login-reg ul li,
+.brand-logo ul li,
+.gallery-menu-left ul li,
+.gallery-menu-right ul li {
+    display: inline-block;
+    font-size: 14px;
+}
+.fb,
+.tw {
+    color: #fff !important;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+.fb {
+    background-color: #34518d;
+}
+.tw {
+    background-color: #00acee;
+    margin-left: 10px;
+}
+.follow {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.apps,
+.play {
+    object-fit: contain;
+}
+.down-app {
+    margin-right: 10px;
+}
+.download-btn.text-uppercase ul li a img {
+    width: 150px;
+}
+.apple {
+    margin-right: 15px;
+}
+/*===============
+    Footer css
+==================*/
+.footer-area {
+    padding-bottom: 15px;
+}
+.footer-text p a {
+    color: #58e6fe;
+}
+.copyright{
+    width: 100%;
+}
+.copyright-text{
+    width: 90%;
+    float: left;
+}
+.copyright-text{
+    padding-right: 12px;
+}
+.copyright-img{
+    width: 10%;
+    float: right;
+}
+

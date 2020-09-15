@@ -10,7 +10,7 @@
 <meta name="author" content="" />
 
 <!-- Page Title -->
-<title>User Manage</title>
+<title>Casino</title>
 
 <!-- Favicon and Touch Icons -->
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -21,60 +21,219 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS Files -->
   <link href="{{asset('dashboard/assets/css/bootstrap.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('assets/welcome/css/style.css')}}" rel="stylesheet" />
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="https://github.com/Mahanteshkumbar" target="_blank">MS Dashboard</a>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="https://github.com/Mahanteshkumbar" target="_blank">MS Dashboard</a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
-    </ul>
-      <ul class="navbar-nav ml-auto">
-      @if (Route::has('login'))
-          @auth
-          <li class="nav-item">
-              <a class="nav-link" href="{{ url('/home') }}">Home</a>\
-            </li>
-          @else
-          <li class="nav-item">
-              <a class="nav-link" href="{{ route('login') }}">Login</a>
-              </li>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-              @if (Route::has('register'))
+        </ul>
+          <ul class="navbar-nav ml-auto">
+          @if (Route::has('login'))
+              @auth
               <li class="nav-item">
-                  <a class="nav-link" href="{{ route('register') }}">Register</a>
+                  <a class="nav-link" href="{{ url('/home') }}">Home</a>\
+                </li>
+              @else
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('login') }}">Login</a>
                   </li>
-              @endif
-          @endauth
-      @endif
-    </ul>
+
+                  @if (Route::has('register'))
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ route('register') }}">Register</a>
+                      </li>
+                  @endif
+              @endauth
+          @endif
+        </ul>
+        </div>
+
+
+      </div>
+    </nav> -->
+    <!-- Header Area Start -->
+    <div class="header">
+        <div class="container">
+            <div class="row pt-2 pb-2">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <a href="index.html">logo</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="login-reg">
+                        <ul>
+                            <li><a href="#" class="login">login</a></li>
+                            <li><a href="#" class="register">register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <nav>
+                            <ul>
+                                <li><a href="#"><img src="assets/welcome/images/icon/1-sel.png" alt=""> slots</a></li>
+                                <li><a href="#"><img src="assets/welcome/images/icon/2.png" alt=""> casino</a></li>
+                                <li><a href="#"><img src="assets/welcome/images/icon/3.png" alt=""> poker</a></li>
+                                <li><a href="#"><img src="assets/welcome/images/icon/4.png" alt=""> bingo</a></li>
+                                <li><a href="#"><img src="assets/welcome/images/icon/5.png" alt=""> skill</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search">
+                            <span><i class="fa fa-search"></i></span> <input type="search" placeholder="Search games">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="free-text text-center">
+            <img src="assets/welcome/images/icon/1.png" alt=""><p>Free slots & slot machines online</p>
+        </div>
     </div>
+    <!-- Header Area End -->
+    <br><br>
 
-    
-  </div>
-</nav>
-
-<br><br>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 col-lg-12">
-      <div class="jumbotron">
-        <h4>Laravel-Roles-Permissions-Bootstrap4-Design</h4>
-        <p class="lead">This is a <b>Laravel 7.X</b> admin panel starter project with roles-permissions management based on Spatie Laravel-permission package, Paper Dashboard Design theme and also has jquery, bootstrap 4.X, Bootstrap Datatables.</p>
-        <p><a href="https://demos.creative-tim.com/bs3/paper-dashboard/dashboard.html" target="_blank">Paper Dashboard Link</a></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="jumbotron">
+            <h4>Laravel-Roles-Permissions-Bootstrap4-Design</h4>
+            <p class="lead">This is a <b>Laravel 7.X</b> admin panel starter project with roles-permissions management based on Spatie Laravel-permission package, Paper Dashboard Design theme and also has jquery, bootstrap 4.X, Bootstrap Datatables.</p>
+            <p><a href="https://demos.creative-tim.com/bs3/paper-dashboard/dashboard.html" target="_blank">Paper Dashboard Link</a></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+    <!-- Brand Area Start -->
+    <div class="brand-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-logo text-center">
+                        <ul>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/Visa_2014_logo_detail.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/mastercard_hrz_pos_300px_2x.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/Skrill-Logo.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/logo_paysafecard.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/1280px-Neteller.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/PayPal-Logo.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/1280px-Giropay.png" alt="Gallery Image"></a></li>
+                            <li><a href="#"><img src="assets/welcome/images/paycardicon/Layer 8.png" alt="Gallery Image"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand Area End -->
+    <!-- Footer Menu Top Start -->
+    <div class="footer-menu-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-menu-single text-capitalize">
+                        <h3>about us</h3>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">general terms & conditions</a></li>
+                            <li><a href="#">privacy notice</a></li>
+                            <li><a href="#">cookie policy</a></li>
+                            <li><a href="#">newsletter & promotions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-menu-single text-capitalize">
+                        <h3>help</h3>
+                        <ul>
+                            <li><a href="#">responsible gaming</a></li>
+                            <li><a href="#">gameTwist help</a></li>
+                            <li><a href="#">sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu-single text-capitalize email">
+                        <h3>support</h3>
+                        <ul>
+                            <li><img src="assets/welcome/images/unnamed.png" alt=""></li>
+                            <li><a href="#">support@gametwist.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-menu-single float-right">
+                        <div class="language">
+                            <li>Select Language: <a href="#"><img src="assets/welcome/images/langnew.png" alt=""> </a></li>
+                        </div>
+                        <div class="copyright">
+                            <div class="copyright-text">
+                                <p>2020 Funstage</p>
+                                <p>Games powered by GREENTUBE</p>
+                            </div>
+                            <div class="copyright-img">
+                                <span><img src="assets/welcome/images/18plus.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Menu Top End -->
+    <!-- Download Area Start -->
+    <div class="download-area">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="download-btn text-uppercase">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="down-app">download app</a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="apple"><img src="assets/welcome/images/apple.png" style="width:100%;height:90%" alt=""></a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#"><img src="assets/welcome/images/play.png" style="width:100%" alt=""></a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">FOLLOW GAMETWIST</div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="fb"><i class="fab fa-facebook-square"></i> facebook</a></div>
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4"><a href="#" class="tw"><i class="fab fa-twitter"></i> twitter</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- Download Area End -->
+    <!-- Footer Area Start -->
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center">
+                        <p>Gaming should be fun and nothing else. This is why you can only play with the virtual game currency 'Twists'. Fun should always be the most</p>
+                        <p>important aspect of your gaming. It doesn’t matter whether you play online or in the casino, nerver play to make a 'quick buck' or if you cannot afford</p>
+                        <p>it. If you are concerned about the gaming habits of another person please contact <a href="#">GamCare</a> or <a href="#">GamblersAnonymous</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Area End -->
 
 </body>
 
