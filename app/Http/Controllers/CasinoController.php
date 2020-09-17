@@ -49,17 +49,20 @@ class CasinoController extends Controller
                 'password'     => "PSWD_159876523"
             )
         );
+        $name = $_GET['Name'];
+        $brand = $_GET['Brand'];
+        $mobile = $_GET['Mobile'];
         try {
             // setting params
             $params = new \stdClass();
             $params -> Skin_Id_Master = '65291';
             $params -> Skin_Name = 'salayes';
             $params -> Skin_User_Login = 'utenteyes';
-            $params -> Game_Name = 'Aztekos';
-            $params -> Brand = 'xplosive';
+            $params -> Game_Name = $name;
+            $params -> Brand = $brand;
             $params -> Language = 'IT';
             $params -> Currency = 'EUR';
-            $params -> Mobile = '0';
+            $params -> Mobile = $mobile;
             $params -> ForFun = '0';
             $params -> Token = '1185';
             $params -> lobbyURL = "xxxxxxxxxxxx.com";

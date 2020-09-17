@@ -202,5 +202,5 @@
 
 <script src="{{asset('dashboard/assets/js/core/jquery.min.js')}}"></script>
 <script src="{{asset('dashboard/assets/js/core/bootstrap.min.js')}}"></script>
-
+<script src="{{asset('assets/welcome/main.js')}}"></script>
 </html>
