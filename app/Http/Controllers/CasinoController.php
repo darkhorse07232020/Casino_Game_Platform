@@ -3,27 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use SoapClient;
 
-class HomeController extends Controller
+class CasinoController extends Controller
 {
-    const $client = new SoapClient('http://api-dom.ns3177.com/GBSGameService.asmx?wsdl',
-        array(
-            'soap_version' =>  'SOAP_1_2',
-            'compression'  =>  SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
-            'encoding'     => 'ISO-8859-1',
-            'login'        => "PROD_159876523",
-            'password'     => "PSWD_159876523"
-        )
-    );
-
     // GET GAMES LIST
     function wsGetListGames () {
 
+        $client = new SoapClient('http://api-dom.ns3177.com/GBSGameService.asmx?wsdl',
+            array(
+                'soap_version' =>  SOAP_1_2,
+                'compression'  =>  SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
+                'encoding'     => 'ISO-8859-1',
+                'login'        => "PROD_159876523",
+                'password'     => "PSWD_159876523"
+            )
+        );
         try {
             // setting params
-            $params = new stdClass;
+            $params = new \stdClass();
             $params -> hall = "65291";
-            $params -> Skin_Name = salayes;
+            $params -> Skin_Name = 'salayes';
             //Method Get Games List
             $game_list_ = (array)$client->wsGetListGames($params);
             $gamelist_stdClass = (array)$game_list_['wsGetListGamesResult'];
@@ -40,10 +40,18 @@ class HomeController extends Controller
     // EXECUTE GAME
     //*****************************************************************
     function wsExecuteGame () {
-
+        $client = new SoapClient('http://api-dom.ns3177.com/GBSGameService.asmx?wsdl',
+            array(
+                'soap_version' =>  SOAP_1_2,
+                'compression'  =>  SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP,
+                'encoding'     => 'ISO-8859-1',
+                'login'        => "PROD_159876523",
+                'password'     => "PSWD_159876523"
+            )
+        );
         try {
             // setting params
-            $params = new stdClass;
+            $params = new \stdClass();
             $params -> Skin_Id_Master = '65291';
             $params -> Skin_Name = 'salayes';
             $params -> Skin_User_Login = 'utenteyes';
