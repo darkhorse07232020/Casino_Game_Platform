@@ -17,8 +17,8 @@
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
     <link href="{{asset('dashboard/assets/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('assets/welcome/css/style.css')}}" rel="stylesheet" />
@@ -56,7 +56,7 @@
         <div class="menu-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-8">
+                    <div class="col-8">
                         <nav>
                             <ul>
                                 <li><a href="#"><img src="assets/welcome/images/icon/1-sel.png" alt=""> slots</a></li>
@@ -67,13 +67,16 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <div class="search">
                             <span><i class="fa fa-search"></i></span> <input type="search" placeholder="Search games">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="free-text text-center">
+            <img src="assets/welcome/images/icon/1.png" alt=""><p>Free slots & slot machines online</p>
         </div>
         <div class="free-text text-center">
             <img src="assets/welcome/images/icon/1.png" alt=""><p>Free slots & slot machines online</p>
