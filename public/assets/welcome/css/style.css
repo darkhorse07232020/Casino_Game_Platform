@@ -95,10 +95,8 @@ nav ul li a img{
     text-align: right;
 }
 .search span {
-    position: absolute;
-    left: 143px;
-    top: 6px;
-    z-index: 9999;
+    position: relative;
+    left: 25px;
     color: #51d3eb;
 }
 .search input {
@@ -380,4 +378,3 @@ input::placeholder{
     width: 10%;
     float: right;
 }
-

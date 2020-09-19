@@ -67,7 +67,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="search">
                             <span><i class="fa fa-search"></i></span> <input type="search" placeholder="Search games">
                         </div>
