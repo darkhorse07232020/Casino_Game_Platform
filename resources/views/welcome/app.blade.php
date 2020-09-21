@@ -59,13 +59,13 @@
                     <div class="col-8">
                         <nav>
                             <ul>
-                                <li><a href="#"><img src="assets/welcome/images/icon/1-sel.png" alt=""> slots</a></li>
+                                <li><a href="#"><img src="assets/welcome/images/icon/1-sel.png" alt=""> Slots</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-md-4">
                         <div class="search">
-                            <span><i class="fa fa-search"></i></span> <input type="search" placeholder="Search games">
+                            <span><i class="fa fa-search"></i></span> <input type="search" placeholder="Search games" onsearch="showSearchFilter()" id="searchField">
                         </div>
                     </div>
                 </div>
