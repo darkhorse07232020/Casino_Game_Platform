@@ -1,71 +1,10 @@
 @extends('welcome.app')
 
 @section('content')
-<!-- Img Top Area Start -->
-<div class="img-top-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/1.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Book of Ra deluxe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/2.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Sizzling Hot deluxe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/3.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Lucky Lady's Charm d...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/4.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Lord of the Ocean</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/5.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Golden Sevens</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                <div class="top-img-single">
-                    <img src="assets/welcome/images/6.png" class="img-fluid heightclass" alt="">
-                    <div class="top-text">
-                        <span><img src="assets/welcome/images/TOP copy 3.png" alt=""></span>
-                        <a href="#" class="text-capitalize">Ultra Hot deluxe</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Img Top Area End -->
+
 <!-- Gallery Area Start -->
-<div class="gallery-area">
-    <div class="container mb-4">
+<div class="gallery-area pt-2">
+    <div class="container mb-2">
         <div class="row">
             <div class="col-lg-10 col-md-8 col-sm-6 col-xs-6">
                 <div class="gallery-menu-left text-uppercase">
@@ -91,7 +30,7 @@
         </div>
     </div>
     <div class="container" style="max-height: 700px; overflow: auto">
-        <div class = "row d-flex" id = "GameContainer">
+        <div class = "row d-flex px-5 pb-5" id = "GameContainer">
 
         </div>
     </div>

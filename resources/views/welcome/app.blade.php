@@ -27,7 +27,7 @@
 <body>
 
     <!-- Header Area Start -->
-    <div class="header">
+    <div class="header pb-2">
         <div class="container">
             <div class="row pt-2 pb-2">
                 <div class="col-md-6">
@@ -60,10 +60,6 @@
                         <nav>
                             <ul>
                                 <li><a href="#"><img src="assets/welcome/images/icon/1-sel.png" alt=""> slots</a></li>
-                                <li><a href="#"><img src="assets/welcome/images/icon/2.png" alt=""> casino</a></li>
-                                <li><a href="#"><img src="assets/welcome/images/icon/3.png" alt=""> poker</a></li>
-                                <li><a href="#"><img src="assets/welcome/images/icon/4.png" alt=""> bingo</a></li>
-                                <li><a href="#"><img src="assets/welcome/images/icon/5.png" alt=""> skill</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -76,9 +72,27 @@
             </div>
         </div>
         <div class="free-text text-center">
-            <img src="assets/welcome/images/icon/1.png" alt=""><p>Free slots & slot machines online</p>
-        </div> <hr>
-        <div class="container text-center" >
+            <img src="assets/welcome/images/icon/1.png" alt=""><p>Slot Machines Online</p>
+        </div>
+		<!-- Img Top Area Start -->
+		<hr>
+		<div class="carousel slide " data-ride="carousel">
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/welcome/banners/slide01.jpg" width="100%">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/welcome/banners/slide02.jpg" width="100%">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/welcome/banners/slide03.jpg" width="100%">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- Img Top Area End -->
+        <div class="container text-center pt-2" >
             <div class="mx-12 my-1">
                 <div class="row d-flex" id="companies">
 
