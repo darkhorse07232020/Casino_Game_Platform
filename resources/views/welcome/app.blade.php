@@ -78,67 +78,11 @@
         <div class="free-text text-center">
             <img src="assets/welcome/images/icon/1.png" alt=""><p>Free slots & slot machines online</p>
         </div> <hr>
-        <div class="container text-center" style="background-color: black">
+        <div class="container text-center" >
             <div class="mx-12 my-1">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/1x2.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/ainsworth_s.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/amatic.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/apex.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/aristocrat.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/casinogames.svg" alt=""> </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/egt.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/irondog.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/merkur.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/microgaming.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/netent.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/novoline.svg" alt=""> </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/novomatic_s.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/oryx.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/playson.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/playtech_s.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/quickspin.svg" alt=""> </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="m-1 p-1" style='background-color: #00004d'> <img src="assets/welcome/logo/wazdan.svg" alt=""> </div>
-                    </div>
+                <div class="row d-flex" id="companies">
+
+
                 </div>
             </div>
         </div>

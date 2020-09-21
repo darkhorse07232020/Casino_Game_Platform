@@ -8,14 +8,20 @@ const groupBy = (array, key) => {
     }, {}); // empty object is the initial value for result object
 };
 
-$.get('/api/casino/getlist', {}, function(result){
+function getGamelist(getData) {
+    $.get('/api/casino/getlist', {}, function(result){
+        getData(result);
+    });
+}
+
+getGamelist(function(result){
     var content = '';
     for(index in result){
         // console.log(result[index]);
         if(result[index].Desktop != 1) {
             continue;
         }
-        content += `<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+        content += `<div class="gamelogo col-lg-2 col-md-4 col-sm-6 col-xs-6" brand="` + result[index].Brand + `">
             <div class="gallery-single-img">
                 <a href="javascript:void(0);"><img src="` + result[index].Button_Image_Path + `" class="img-fluid" alt="Gallery Image"></a>
                 <a href="javascript:void(0);">` + result[index].Description + `</a>
@@ -25,8 +31,20 @@ $.get('/api/casino/getlist', {}, function(result){
             </div>
         </div>`
     }
+    $('#GameContainer').empty();
     $('#GameContainer').append(content);
-    console.log(groupBy(result, "Filter"));
+    gresult = groupBy(result, "Brand");
+    content = '';
+    for(company in gresult){
+        console.log(company);
+        content += `<div class="col-2 p-1" onclick = "showCompanyFilter('` + company + `')">
+            <div class="p-1" style='background-color: #00004d'>
+                <a href="javascript:void(0);"><img src="assets/welcome/logo/` + company + `_white.svg" width="110px" alt=""></a>
+            </div>
+        </div>`
+    }
+    $('#companies').empty();
+    $('#companies').append(content);
 });
 
 function executeGame(gname, brand, mobile) {
@@ -38,4 +56,14 @@ function executeGame(gname, brand, mobile) {
         // console.log(result.URL);
         window.open(result.URL);
     });
+}
+
+function showCompanyFilter(brand) {
+    $('.gamelogo').hide();
+
+    jQuery.expr[':'].contains = function(a, i, m) {
+        return jQuery(a).attr('brand').indexOf(m[3]) >= 0;
+    };
+
+    $('.gamelogo:contains("'+brand+'")').show();
 }
